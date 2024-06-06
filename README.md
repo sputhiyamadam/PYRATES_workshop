@@ -15,12 +15,12 @@ The codes will repoduce the following image:
 
 ## Dataset used for the analysis
 Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
-    1. IMERG precipitation daily data for a period of  2000-2023. NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). Dataset is in netcdf format.
-    2. ETOPO1 bathymetry/topography data: The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. Dataset is in netcdf format.
+1. IMERG precipitation daily data for a period of  2000-2023. NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). Dataset is in netcdf format.
+2. ETOPO1 bathymetry/topography data: The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. Dataset is in netcdf format.
 
 ### links to data:
-    1. IMERG:
-    2. ETOPO:
+1. IMERG:
+2. ETOPO:
 
 ```
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LijoDXL/OceanographyWithPython/master)
@@ -41,6 +41,16 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 ## Getting started
 
 ### The workflow
+Here is a simple flow chart:
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
+
 
 Here is the flow chart:
 
