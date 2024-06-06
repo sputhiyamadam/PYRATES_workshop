@@ -47,8 +47,8 @@ Input/Output table:
 
 | Step | Input | Output | Code |
 | --- | --- | --- | --- |
-| Step 1 | etopo.nc; imerg.nc| L1_prepocessing_data.ipynb | 
-| Step 2 | etopo.nc; imerg.nc| L1_prepocessing_data.ipynb | 
+| Step 1 | etopo.nc; imerg.nc| time_series1_mountain_vs_plain.nc| L1_prepocessing_data.ipynb | 
+| Step 2 | time_series1_mountain_vs_plain.nc| FFT_results.nc| L2_spectral_analysis_visualization.ipynb | 
 
 
 #### Step 1: Getting data ready and preprocessing.
