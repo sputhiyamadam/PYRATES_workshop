@@ -41,18 +41,18 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 ## Getting started
 
 ### The workflow
-Here is a simple flow chart:
-
-```mermaid
-graph TD;
-  id1[A F]-->  id2[B G];
-  A-->C;
-  B-->D;
-  C-->D;
-```
 
 
-Here is the flow chart:
+Input/Output table:
+
+| Step | Input | Output | Code |
+| --- | --- | --- | --- |
+| Step 1 | etopo.nc; imerg.nc| L1_prepocessing_data.ipynb | 
+| Step 2 | etopo.nc; imerg.nc| L1_prepocessing_data.ipynb | 
+
+
+#### Step 1: Getting data ready and preprocessing.
+Here is the flow chart for preprocessing:
 
 ```mermaid
 graph TD;
@@ -64,6 +64,13 @@ graph TD;
     
     id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take area average to get a time series]
 ```
+
+Input/Output table:
+
+| Step | Input | Output | Code |
+| --- | --- | --- | --- |
+| Step 1 | etopo.nc; imerg.nc| L1_prepocessing_data.ipynb | 
+
 
 ### Adding packages in your environment
 
