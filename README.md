@@ -43,13 +43,12 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 ### The workflow
 Here is a simple flow chart:
 
-```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+  id1[A F]-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+
 
 
 Here is the flow chart:
