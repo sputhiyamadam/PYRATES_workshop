@@ -45,7 +45,7 @@ Here is a simple flow chart:
 
 ```mermaid
 graph TD;
-  id1[A F]-->  id1[B G];
+  id1[A F]-->  id2[B G];
   A-->C;
   B-->D;
   C-->D;
@@ -56,7 +56,7 @@ Here is the flow chart:
 
 ```mermaid
 graph TD;
-    id1(Data processing)-->reading netcdf--> slecting the domain of study--> Regriding (same resolution for all variables); 
+    id1(Data processing)-->id2(reading netcdf)--> slecting the domain of study--> Regriding (same resolution for all variables); 
     Regriding (same resolution for all variables-->elevation data-->topographical factors;
     topographical factors-->slope/relief;
     topographical factors-->distance from coastline;
