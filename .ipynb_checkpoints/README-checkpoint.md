@@ -8,27 +8,46 @@
  Date: created on June 4, 
  License:
 
-
+______________________________________________________________
 
 The codes will repoduce the following image:
 
 
-## Dataset used for the analysis
+## Study region and Dataset used for the analysis
 Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
+```geojson
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "ID": 0
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+              [160,10],
+              [160,-11],
+              [90,30],
+              [90,10],
+              [160,-11]
+          ]
+        ]
+      }
+    }
+  ]
+}
+```
+
 1. IMERG precipitation daily data for a period of  2000-2023. NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). Dataset is in netcdf format.
 2. ETOPO1 bathymetry/topography data: The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. Dataset is in netcdf format.
 
 ### links to data:
 1. IMERG:
 2. ETOPO:
-
-```
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LijoDXL/OceanographyWithPython/master)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/LijoDXL/OceanographyWithPython/blob/master/LICENSE)
-
-[![Twitter Follow](https://img.shields.io/twitter/follow/lijodxl?style=social)](https://twitter.com/LIJODXL)
-
-```
 
 ## Method: 
 1. Extract precipitation data over mountainous regions (using information from etopo elevation data) for the study region.
@@ -40,8 +59,11 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 
 ## Getting started
 
-### The workflow
+### Adding packages in your environment
 
+Suppose you want to install a new package`conda install -c <channel-name> <package-name>`in your environment following the envlist.yml
+
+### The workflow
 
 Input/Output table:
 
@@ -65,19 +87,14 @@ graph TD;
     id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take area average to get a time series]
 ```
 
-Input/Output table:
 
-| Step | Input | Output | Code |
-| --- | --- | --- | --- |
-| Step 1 | etopo.nc; imerg.nc| L1_prepocessing_data.ipynb | 
+#### Step 2: Spectral analysis.
+Here is the flow chart for preprocessing:
 
-
-### Adding packages in your environment
-
-Suppose you want to install a new package`conda install -c <channel-name> <package-name>`in your environment following the envlist.yml
-
-### Do the preprocessing of data using pre
-
+```mermaid
+graph TD;
+    id1[Reading the timeseries]--> id2[removing the annual mean]
+```
 
 ```
 
