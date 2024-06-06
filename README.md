@@ -7,7 +7,8 @@
  Author: Sreedevi Puthiyamadam Vasu
  Date: created on June 4, 
  License:
-
+ 
+[![DOI](https://zenodo.org/badge/810518047.svg)](https://zenodo.org/doi/10.5281/zenodo.11508508)
 ______________________________________________________________
 
 The codes will repoduce the following image:
