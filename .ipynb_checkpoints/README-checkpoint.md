@@ -1,11 +1,10 @@
 # Example repsitory for pyrates workshop 
 
-# PYRATES_workshop
-# PyRATES - Reproducible Study - Sreedevi
+# PYRATES_workshop - Reproducible Study
 
-## Periodicity in Rainfall in relation to topography over the Maritime Continent
+## Identifying the periodicity in rainfall over the Maritime Continent in relation to different topographical factors.
 
- Author:
+ Author: Sreedevi Puthiyamadam Vasu
  Date: created on June 4, 
  License:
 
@@ -37,8 +36,26 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 3. Calculate the Fourier transform for analyzing the difference in periodicity of precipitation over high elevation versus planar region.
 
 
+
+
 ## Getting started
 
+### The workflow
+
+Here is the flow chart:
+
+```mermaid
+graph TD;
+    Data processing-->reading netcdf--> slecting the domain of study--> Regriding (same resolution for all variables); 
+    Regriding (same resolution for all variables-->elevation data-->topographical factors;
+    topographical factors-->slope/relief;
+    topographical factors-->distance from coastline;
+    topographical factors-->critical elevation;
+    
+    Regriding (same resolution for all variables-->rainfall data-->extract the data based on topographical factor criteria--> take area average to get a time series
+    B-->D;
+    C-->D;
+```
 
 ### Adding packages in your environment
 
