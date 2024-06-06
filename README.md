@@ -9,14 +9,24 @@
  License:
 
 
-# Dataset used for the analysis
-
+## Dataset used for the analysis
+Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
+1. IMERG precipitation daily data for a period of  2000-2023. NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). Dataset is in netcdf format.
+2. ETOPO1 bathymetry/topography data: The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. Dataset is in netcdf format.
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/LijoDXL/OceanographyWithPython/master)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/LijoDXL/OceanographyWithPython/blob/master/LICENSE)
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/lijodxl?style=social)](https://twitter.com/LIJODXL)
 
+
+## Method: 
+1. Extract precipitation data over mountainous regions (using information from etopo elevation data) for the study region.
+2. Similarly extract precipitation data over planar regions (using information from etopo elevation data) for the study region.
+3. Calculate the Fourier transform for analyzing the difference in periodicity of precipitation over high elevation versus planar region.
+
+
 ## Getting started
+The codes will 
 
 You can run this tutorial online without installing anything on your local machine just by clicking
 `launch Binder` icon from the top right corner of this page.
@@ -85,10 +95,3 @@ More details on managing environment with conda can be found [here](https://docs
 
 
 
-<<<<<<< Updated upstream
-Dont make conflict.
-Conflict - make some conflict..
-
-take the risk
-=======
->>>>>>> Stashed changes
