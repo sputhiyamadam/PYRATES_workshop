@@ -60,11 +60,8 @@ graph TD;
     Regriding (same resolution for all variables-->elevation data-->topographical factors;
     topographical factors-->slope/relief;
     topographical factors-->distance from coastline;
-    topographical factors-->critical elevation;
-    
+    topographical factors-->critical elevation;  
     Regriding (same resolution for all variables-->rainfall data-->extract the data based on topographical factor criteria--> take area average to get a time series
-    B-->D;
-    C-->D;
 ```
 
 ### Adding packages in your environment
