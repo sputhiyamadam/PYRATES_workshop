@@ -56,13 +56,13 @@ Here is the flow chart:
 
 ```mermaid
 graph TD;
-    id1[Data processing]-->id2[reading netcdf]--> id3[slecting the domain of study]--> id4[Regriding-same resolution for all variables]; 
+    id1[Data processing]-->id2[reading netcdf]--> id3[Domain selection]--> id4[Regriding-same resolution for all variables]; 
     id4[Regriding-same resolution for all variables]-->id5[elevation data]-->id6[topographical factors];
     id6[topographical factors]-->id7[slope/relief];
     id6[topographical factors]-->id8[distance from coastline];
     id6[topographical factors]-->id9[critical elevation];  
     
-    id7[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take area average to get a time series]
+    id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take area average to get a time series]
 ```
 
 ### Adding packages in your environment
