@@ -30,8 +30,8 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
         "type": "Polygon",
         "coordinates": [
           [
-              [160,10],
               [160,-11],
+              [160,-10],
               [90,10],
               [90,-11],
               [160,10]
