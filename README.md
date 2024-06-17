@@ -1,8 +1,6 @@
-# Example repsitory for pyrates workshop 
+# Reproducible Study for PYRATES_workshop
 
-# PYRATES_workshop - Reproducible Study
-
-## Identifying the periodicity in rainfall over the Maritime Continent in relation to different topographical factors.
+## Identify the periodicity of rainfall over the Maritime Continent in relation to different topographical factors.
 
  Author: Sreedevi Puthiyamadam Vasu
  Date: created on June 4, 
@@ -11,7 +9,7 @@
 [![DOI](https://zenodo.org/badge/810518047.svg)](https://zenodo.org/doi/10.5281/zenodo.11508508)
 ______________________________________________________________
 
-The codes will repoduce the following image:
+The codes will reproduce the following image:
 
 
 ## Study region and Dataset used for the analysis
