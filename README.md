@@ -95,7 +95,7 @@ Here is the flow chart for step 2:
 ```mermaid
 graph TD;
     id1[Reading the timeseries1]--> id2[removing the annual mean]--> id3[removing the annual mean]
-    id1[Reading the timeseries1]--> id2[removing the annual mean]
+    id11[Reading the timeseries1]--> id12[removing the annual mean]
 ```
 
 ```
