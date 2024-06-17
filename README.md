@@ -1,8 +1,6 @@
-# Example repsitory for pyrates workshop 
+# Reproducibility Study for PYRATES workshop
 
-# PYRATES_workshop - Reproducible Study
-
-## Identifying the periodicity in rainfall over the Maritime Continent in relation to different topographical factors.
+## Identify the periodicity of rainfall over the Maritime Continent in relation to different topographical factors.
 
  Author: Sreedevi Puthiyamadam Vasu
  Date: created on June 4, 
@@ -11,7 +9,7 @@
 [![DOI](https://zenodo.org/badge/810518047.svg)](https://zenodo.org/doi/10.5281/zenodo.11508508)
 ______________________________________________________________
 
-The codes will repoduce the following image:
+The codes will reproduce the following image:
 
 
 ## Study region and Dataset used for the analysis
@@ -30,10 +28,10 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
         "type": "Polygon",
         "coordinates": [
           [
-              [160,10],
               [160,-11],
-              [90,10],
+              [160,-10],
               [90,-11],
+              [90,10],
               [160,10]
           ]
         ]
@@ -43,26 +41,27 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 }
 ```
 
-1. IMERG precipitation daily data for a period of  2000-2023. NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). Dataset is in netcdf format.
-2. ETOPO1 bathymetry/topography data: The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. Dataset is in netcdf format.
+1. IMERG precipitation daily data for the period of 2000-2023.
+   NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). The dataset is in NetCDF format.
+2. ETOPO1 bathymetry/topography data:
+   The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. The dataset is in NetCDF format.
 
-### links to data:
+### Links to data:
 1. IMERG:
 2. ETOPO:
 
 ## Method: 
-1. Extract precipitation data over mountainous regions (using information from etopo elevation data) for the study region.
-2. Similarly extract precipitation data over planar regions (using information from etopo elevation data) for the study region.
+1. Extract precipitation data over mountainous regions (using information from ETOPO1 elevation data) for the study region.
+2. Similarly, precipitation data for the study region will be extracted over planar regions (using information from ETOPO1 elevation data).
 3. Calculate the Fourier transform for analyzing the difference in periodicity of precipitation over high elevation versus planar region.
-
 
 
 
 ## Getting started
 
-### Adding packages in your environment
+### Adding packages to your environment
 
-Suppose you want to install a new package`conda install -c <channel-name> <package-name>`in your environment following the envlist.yml
+Suppose you want to install a new package `conda install -c <channel-name> <package-name>`in your environment following the envlist.yml
 
 ### The workflow
 
@@ -85,16 +84,18 @@ graph TD;
     id6[topographical factors]-->id8[distance from coastline];
     id6[topographical factors]-->id9[critical elevation];  
     
-    id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take area average to get a time series]
+    id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take latitude average to get a time series]
+    id11[extract the data based on topographical factor criteria]-->id13[take longitude average to get a time series]
 ```
 
 
 #### Step 2: Spectral analysis.
-Here is the flow chart for preprocessing:
+Here is the flow chart for step 2:
 
 ```mermaid
 graph TD;
-    id1[Reading the timeseries]--> id2[removing the annual mean]
+    id1[Reading the timeseries1]--> id2[removing the annual mean]--> id3[removing the annual mean]
+    id11[Reading the timeseries1]--> id12[removing the annual mean]
 ```
 
 ```
