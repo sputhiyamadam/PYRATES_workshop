@@ -46,7 +46,7 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 2. ETOPO1 bathymetry/topography data:
    The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. The dataset is in NetCDF format.
 
-### links to data:
+### Links to data:
 1. IMERG:
 2. ETOPO:
 
@@ -84,16 +84,18 @@ graph TD;
     id6[topographical factors]-->id8[distance from coastline];
     id6[topographical factors]-->id9[critical elevation];  
     
-    id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take area average to get a time series]
+    id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take latitude average to get a time series]
+    id11[extract the data based on topographical factor criteria]-->id13[take longitude average to get a time series]
 ```
 
 
 #### Step 2: Spectral analysis.
-Here is the flow chart for preprocessing:
+Here is the flow chart for step 2:
 
 ```mermaid
 graph TD;
-    id1[Reading the timeseries]--> id2[removing the annual mean]
+    id1[Reading the timeseries1]--> id2[removing the annual mean]--> id3[removing the annual mean]
+    id1[Reading the timeseries1]--> id2[removing the annual mean]-->
 ```
 
 ```
