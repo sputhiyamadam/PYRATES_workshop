@@ -61,7 +61,7 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 
 ### Adding packages to your environment
 
-Suppose you want to install a new package`conda install -c <channel-name> <package-name>`in your environment following the envlist.yml
+Suppose you want to install a new package `conda install -c <channel-name> <package-name>`in your environment following the envlist.yml
 
 ### The workflow
 
@@ -95,7 +95,7 @@ Here is the flow chart for step 2:
 ```mermaid
 graph TD;
     id1[Reading the timeseries1]--> id2[removing the annual mean]--> id3[removing the annual mean]
-    id1[Reading the timeseries1]--> id2[removing the annual mean]-->
+    id1[Reading the timeseries1]--> id2[removing the annual mean]
 ```
 
 ```
