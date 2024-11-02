@@ -9,8 +9,8 @@
 [![DOI](https://zenodo.org/badge/810518047.svg)](https://zenodo.org/doi/10.5281/zenodo.11508508)
 ______________________________________________________________
 
-The codes will reproduce the following image:
-
+The codes will reproduce the analysis/results from the manuscript: Sreedevi P. Vasu, Pallav Ray, Nirmal Mathew Alex, Nathaniel C. Johnson, Efthymios I. Nikolopoulos, and Sopia Lestari, 2024b; Spatial distribution of precipitation over the Maritime Continent and its dependence on topography, under preparation.
+______________________________________________________________
 
 ## Study region and Dataset used for the analysis
 Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
@@ -41,14 +41,15 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 }
 ```
 
-1. IMERG precipitation daily data for the period of 2000-2023.
+1. IMERG precipitation monthly data for the period of 2000-2023.
    NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). The dataset is in NetCDF format.
-2. ETOPO1 bathymetry/topography data:
+   https://gpm.nasa.gov/data/directory
+3. ETOPO1 bathymetry/topography data:
    The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. The dataset is in NetCDF format.
+   https://www.ncei.noaa.gov/products/etopo-global-relief-model
+5. Derived data from ETOPO1 classifying data points into mountain, hill, and plains.
+   Data enclosed.
 
-### Links to data:
-1. IMERG:
-2. ETOPO:
 
 ## Method: 
 1. Extract precipitation data over mountainous regions (using information from ETOPO1 elevation data) for the study region.
