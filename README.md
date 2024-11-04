@@ -88,9 +88,44 @@ graph TD;
     id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take latitude average to get a time series]
     id11[extract the data based on topographical factor criteria]-->id13[take longitude average to get a time series]
 ```
+# 1. Analysis of Rainfall Over High Land and Low Land Regions
 
+## 1.1 Importing the Libraries
+
+## 1.2 Reading NetCDF Files
+
+# 2. Developing Masks for High Land and Planar Regions
+
+### 2.1 Creating High Land and Planar Region Masks
+
+### 2.2 Plotting the High Land and Planar Points
+
+# 3. Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps
+
+# 4. Plotting the Rainfall Data
+
+# 5. Selecting the Domain of Interest and Calculating Mean Rainfall Along Longitude and Latitude
+
+# 6. Plotting the Resulting Arrays
+
+### 6.1 Plotting Mean Rainfall Across Different Latitudes
+
+### 6.2 Plotting Mean Rainfall Across Different Longitudes
 
 #### Step 2: Spectral analysis.
+
+
+FFT Analysis of Rainfall Data Over High and Low Land Regions
+## 1. Importing Data
+## 2. Importing the Previous Notebook
+## 3. Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)
+### 3.1 FFT of High Land Rainfall - Latitude Average
+### 3.2 FFT of High Land Rainfall - Longitude Average
+## 4. Calculating FFT for Low Land Rainfall (Latitude and Longitude Averages)
+### 4.1 FFT of Low Land Rainfall - Latitude Average
+### 4.2 FFT of Low Land Rainfall - Longitude Average
+## 5. Plotting the FFT Results
+## 6. Calculating and Plotting the Difference in FFT Magnitude
 Here is the flow chart for step 2:
 
 ```mermaid
