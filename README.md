@@ -93,21 +93,7 @@ graph TD;
 ```
 
 #### Step 2: Spectral analysis.
-
-
-FFT Analysis of Rainfall Data Over High and Low Land Regions
-## 1. Importing Data
-## 2. Importing the Previous Notebook
-## 3. Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)
-### 3.1 FFT of High Land Rainfall - Latitude Average
-### 3.2 FFT of High Land Rainfall - Longitude Average
-## 4. Calculating FFT for Low Land Rainfall (Latitude and Longitude Averages)
-### 4.1 FFT of Low Land Rainfall - Latitude Average
-### 4.2 FFT of Low Land Rainfall - Longitude Average
-## 5. Plotting the FFT Results
-## 6. Calculating and Plotting the Difference in FFT Magnitude
 Here is the flow chart for step 2:
-
 
 ```mermaid
 graph TD;
