@@ -117,8 +117,8 @@ graph TD;
     id4[Calculating FFT]-->id5[Calculating FFT for High Land Rainfall - Latitude and Longitude Averages]
     id4[Calculating FFT]-->id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages];
 
-    id5[Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)]-->id7[FFT of High Land Rainfall - Latitude Average]
-    id5[Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)]-->id8[FFT of High Land Rainfall - Longitude Average]
+    id5[Calculating FFT for High Land Rainfall Latitude and Longitude Averages]-->id7[FFT of High Land Rainfall - Latitude Average]
+    id5[Calculating FFT for High Land Rainfall Latitude and Longitude Averages]-->id8[FFT of High Land Rainfall - Longitude Average]
     
     id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages]-->id9[FFT of Low Land Rainfall - Latitude Average]
     id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages]-->id10[FFT of Low Land Rainfall - Longitude Average]
