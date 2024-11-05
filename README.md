@@ -44,10 +44,10 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
 1. IMERG precipitation monthly data for the period of 2000-2023.
    NASA's Integrated Multi-satellitE Retrievals for GPM (IMERG) Version 6 precipitation estimates (Huffman et al. 2019). The dataset is in NetCDF format.
    https://gpm.nasa.gov/data/directory
-3. ETOPO1 bathymetry/topography data:
+2. ETOPO1 bathymetry/topography data:
    The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. The dataset is in NetCDF format.
    https://www.ncei.noaa.gov/products/etopo-global-relief-model
-5. Derived data from ETOPO1 classifying data points into mountain, hill, and plains.
+3. Derived data from ETOPO1 classifying data points into mountain, hill, and plains.
    Data enclosed.
 
 
@@ -70,8 +70,8 @@ Input/Output table:
 
 | Step | Input | Output | Code |
 | --- | --- | --- | --- |
-| Step 1 | etopo.nc; imerg.nc| time_series1_mountain_vs_plain.nc| L1_prepocessing_data.ipynb | 
-| Step 2 | time_series1_mountain_vs_plain.nc| FFT_results.nc| L2_spectral_analysis_visualization.ipynb | 
+| Step 1 | etopo.nc; IMERG_V07_2000_2023_monthly.nc; topographic_factors_etopo.nc| high_rain_lat_avg; high_rain_lon_avg;low_rain_lat_avg; low_rain_lon_avg | L1_prepocessing_data.ipynb | 
+| Step 2 | high_rain_lat_avg; high_rain_lon_avg;low_rain_lat_avg; low_rain_lon_avg| diff_lat_avg; FFT_high_rain_lat_avg; FFT_low_rain_lat_avg; diff_lon_avg; FFT_high_rain_lon_avg; FFT_low_rain_lon_avg| L2_spectral_analysis_visualization.ipynb | 
 
 
 #### Step 1: Getting data ready and preprocessing.
@@ -79,8 +79,8 @@ Here is the flow chart for preprocessing:
 
 ```mermaid
 graph TD;
-    id1[Data processing]-->id2[reading netcdf]--> id3[Domain selection]--> id4[Regriding-same resolution for all variables]; 
-    id4[Regriding-same resolution for all variables]-->id5[elevation data]-->id6[topographical factors];
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]-->id2[Importing the Libraries]--> id3[Reading NetCDF Files]--> id4[Developing Masks for High Land and Planar Regions]; 
+    id4[Developing Masks for High Land and Planar Regions]-->id5[Creating High Land and Planar Region Masks]-->id6[Plotting the High Land and Planar Points];
     id6[topographical factors]-->id7[slope/relief];
     id6[topographical factors]-->id8[distance from coastline];
     id6[topographical factors]-->id9[critical elevation];  
