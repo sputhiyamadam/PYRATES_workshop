@@ -85,7 +85,7 @@ graph TD;
     id4[Developing Masks for High Land and Planar Regions]-->id5[Creating High Land and Planar Region Masks]
     id4[Developing Masks for High Land and Planar Regions]-->id6[Plotting the High Land and Planar Points];
     
-    id1[Analysis of Rainfall Over High Land and Low Land Regions]-->-->id7[Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps]-->id8[Plotting the Rainfall Data];
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]--> id7[Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps]-->id8[Plotting the Rainfall Data];
     id6[topographical factors]-->id9[critical elevation];  
     
     id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take latitude average to get a time series]
