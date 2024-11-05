@@ -71,7 +71,7 @@ Input/Output table:
 | Step | Input | Output | Code |
 | --- | --- | --- | --- |
 | Step 1 | etopo.nc; IMERG_V07_2000_2023_monthly.nc; topographic_factors_etopo.nc| high_rain_lat_avg; high_rain_lon_avg;low_rain_lat_avg; low_rain_lon_avg | L1_prepocessing_data.ipynb | 
-| Step 2 | high_rain_lat_avg; high_rain_lon_avg;low_rain_lat_avg; low_rain_lon_avg| diff_lat_avg; FFT_high_rain_lat_avg; FFT_low_rain_lat_avg; diff_lon_avg; FFT_high_rain_lon_avg; FFT_low_rain_lon_avg| L2_spectral_analysis_visualization.ipynb | 
+| Step 2 | high_rain_lat_avg; high_rain_lon_avg; low_rain_lat_avg; low_rain_lon_avg| diff_lat_avg; FFT_high_rain_lat_avg; FFT_low_rain_lat_avg; diff_lon_avg; FFT_high_rain_lon_avg; FFT_low_rain_lon_avg| L2_spectral_analysis_visualization.ipynb | 
 
 
 #### Step 1: Getting data ready and preprocessing.
@@ -79,10 +79,13 @@ Here is the flow chart for preprocessing:
 
 ```mermaid
 graph TD;
-    id1[Analysis of Rainfall Over High Land and Low Land Regions]-->id2[Importing the Libraries]--> id3[Reading NetCDF Files]--> id4[Developing Masks for High Land and Planar Regions]; 
-    id4[Developing Masks for High Land and Planar Regions]-->id5[Creating High Land and Planar Region Masks]-->id6[Plotting the High Land and Planar Points];
-    id6[topographical factors]-->id7[slope/relief];
-    id6[topographical factors]-->id8[distance from coastline];
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]-->id2[Importing the Libraries]
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]--> id3[Reading NetCDF Files]
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]--> id4[Developing Masks for High Land and Planar Regions]; 
+    id4[Developing Masks for High Land and Planar Regions]-->id5[Creating High Land and Planar Region Masks]
+    id4[Developing Masks for High Land and Planar Regions]-->id6[Plotting the High Land and Planar Points];
+    
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]-->-->id7[Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps]-->id8[Plotting the Rainfall Data];
     id6[topographical factors]-->id9[critical elevation];  
     
     id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take latitude average to get a time series]
