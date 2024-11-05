@@ -48,7 +48,8 @@ Study region: Maritime Continent ( 90°E-160°E; 10°N-11°S)
    The ETOPO1 global relief model is a high-resolution (1 arc-minute) digital elevation model (DEM) for Earth's surface. The dataset is in NetCDF format.
    https://www.ncei.noaa.gov/products/etopo-global-relief-model
 3. Derived data from ETOPO1 classifying data points into mountain, hill, and plains.
-   Data enclosed.
+Link to data:  
+  https://drive.google.com/drive/folders/1Ghl4moapgskl_8zOVFx8f_pL9VRa5k2U?usp=drive_link
 
 
 ## Method: 
@@ -112,12 +113,6 @@ graph TD;
    
 ```
 
-
-```{image} /assets/images/phdComic.jpg
-:align: "center"
-:scale: 50%
-:name: PhdComic
-```
 
 
 
