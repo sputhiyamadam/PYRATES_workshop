@@ -86,33 +86,36 @@ graph TD;
     id4[Developing Masks for High Land and Planar Regions]-->id6[Plotting the High Land and Planar Points];
     
     id1[Analysis of Rainfall Over High Land and Low Land Regions]--> id7[Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps]-->id8[Plotting the Rainfall Data];
-    id6[topographical factors]-->id9[critical elevation];  
+
+    id1[Analysis of Rainfall Over High Land and Low Land Regions]--> id9[Selecting the Domain of Interest and Calculating Mean Rainfall Along Longitude and Latitude]--> id10[Plotting the Resulting Arrays]
+    id10[Plotting the Resulting Arrays]--> id11[Plotting Mean Rainfall Across Different Latitudes]
+    id10[Plotting the Resulting Arrays]--> id12[Plotting Mean Rainfall Across Different Longitudes]
 ```
-# 1. Analysis of Rainfall Over High Land and Low Land Regions
+### Step1: Analysis of Rainfall Over High Land and Low Land Regions
 
-## 1.1 Importing the Libraries
+#### 1.1 Importing the Libraries
 
-## 1.2 Reading NetCDF Files
+#### 1.2 Reading NetCDF Files
 
-# 2. Developing Masks for High Land and Planar Regions
+### 2. Developing Masks for High Land and Planar Regions
 
-### 2.1 Creating High Land and Planar Region Masks
+##### 2.1 Creating High Land and Planar Region Masks
 
-### 2.2 Plotting the High Land and Planar Points
+##### 2.2 Plotting the High Land and Planar Points
 
-# 3. Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps
+### 3. Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps
 
-# 4. Plotting the Rainfall Data
+### 4. Plotting the Rainfall Data
 
-# 5. Selecting the Domain of Interest and Calculating Mean Rainfall Along Longitude and Latitude
+### 5. Selecting the Domain of Interest and Calculating Mean Rainfall Along Longitude and Latitude
 
-# 6. Plotting the Resulting Arrays
+### 6. Plotting the Resulting Arrays
 
-### 6.1 Plotting Mean Rainfall Across Different Latitudes
+##### 6.1 Plotting Mean Rainfall Across Different Latitudes
 
-### 6.2 Plotting Mean Rainfall Across Different Longitudes
+##### 6.2 Plotting Mean Rainfall Across Different Longitudes
 
-#### Step 2: Spectral analysis.
+###### Step 2: Spectral analysis.
 
 
 FFT Analysis of Rainfall Data Over High and Low Land Regions
