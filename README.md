@@ -122,7 +122,7 @@ graph TD;
     
     id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages]-->id9[FFT of Low Land Rainfall - Latitude Average]
     id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages]-->id10[FFT of Low Land Rainfall - Longitude Average]
-    id1[Spectral analysis]--> Calculating and Plotting the Difference in FFT Magnitude
+    id1[Spectral analysis]--> id11[Calculating and Plotting the Difference in FFT Magnitude]
    
 ```
 
