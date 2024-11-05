@@ -114,14 +114,14 @@ graph TD;
     id1[Spectral analysis]-->id2[Importing Libraries and Data]
     id1[Spectral analysis]--> id3[Importing the Previous Notebook]
     id1[Spectral analysis]--> id4[Calculating FFT]; 
-    id4[Calculating FFT]-->id5[Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)]
-    id4[Calculating FFT]-->id6[Calculating FFT for Low Land Rainfall (Latitude and Longitude Averages)];
+    id4[Calculating FFT]-->id5[Calculating FFT for High Land Rainfall - Latitude and Longitude Averages]
+    id4[Calculating FFT]-->id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages];
 
     id5[Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)]-->id7[FFT of High Land Rainfall - Latitude Average]
     id5[Calculating FFT for High Land Rainfall (Latitude and Longitude Averages)]-->id8[FFT of High Land Rainfall - Longitude Average]
     
-    id6[Calculating FFT for Low Land Rainfall (Latitude and Longitude Averages)]-->id9[FFT of Low Land Rainfall - Latitude Average]
-    id6[Calculating FFT for Low Land Rainfall (Latitude and Longitude Averages)]-->id10[FFT of Low Land Rainfall - Longitude Average]
+    id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages]-->id9[FFT of Low Land Rainfall - Latitude Average]
+    id6[Calculating FFT for Low Land Rainfall - Latitude and Longitude Averages]-->id10[FFT of Low Land Rainfall - Longitude Average]
     id1[Spectral analysis]--> Calculating and Plotting the Difference in FFT Magnitude
    
 ```
