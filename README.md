@@ -87,9 +87,6 @@ graph TD;
     
     id1[Analysis of Rainfall Over High Land and Low Land Regions]--> id7[Extracting Rainfall Data Over High and Low Land Data Points for All Time Steps]-->id8[Plotting the Rainfall Data];
     id6[topographical factors]-->id9[critical elevation];  
-    
-    id4[Regriding-same resolution for all variables]-->id10[rainfall data]-->id11[extract the data based on topographical factor criteria]-->id12[take latitude average to get a time series]
-    id11[extract the data based on topographical factor criteria]-->id13[take longitude average to get a time series]
 ```
 # 1. Analysis of Rainfall Over High Land and Low Land Regions
 
